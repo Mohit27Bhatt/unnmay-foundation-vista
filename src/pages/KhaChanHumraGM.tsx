@@ -236,6 +236,37 @@ const KhaChanHumraGM = () => {
         </div>
       </section>
 
+      {/* Fantastic Four Section */}
+      <section className="py-20 bg-gradient-hero text-primary-foreground relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=600&fit=crop")'
+          }}
+        ></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-up">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg mb-4 text-primary-foreground/90">
+              A Special Initiative Under Kha Chan Humra GM
+            </p>
+            <h2 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
+              Fantastic Four — <br/>
+              <span className="text-accent-light">Celebrating Local Talents</span>
+            </h2>
+            <p className="text-xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
+              Discover and celebrate the exceptional students from rural communities who are excelling 
+              in academics, leadership, and innovation. This program showcases four outstanding students 
+              from each participating school, highlighting their achievements and inspiring others.
+            </p>
+            <Link to="/fantastic-four-explorer" className="btn-hero bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+              Explore Fantastic 4 Students
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-20 bg-gradient-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-up">
