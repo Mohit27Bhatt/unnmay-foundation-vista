@@ -135,8 +135,8 @@ All colors MUST be HSL. Clean, professional theme with warm accents.
   @apply bg-primary 
          hover:bg-primary-light 
          text-primary-foreground 
-         px-6 py-3 
-         rounded-md 
+         px-8 py-4
+         rounded-lg
          font-semibold 
          transition 
          duration-300 
