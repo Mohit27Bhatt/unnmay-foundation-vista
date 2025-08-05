@@ -8,12 +8,12 @@ const Navbar = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
     { name: 'Our Work', href: '/our-work' },
     { name: 'Upcoming Projects', href: '/upcoming-projects' },
     { name: 'Kha Chan Humra GM', href: '/kha-chan-humra-gm' },
     { name: 'Fantastic Four Explorer', href: '/fantastic-four-explorer' },
     { name: 'Contact Us', href: '/contact' },
+    { name: 'About Us', href: '/about' },
   ];
 
   const isActive = (href: string) => location.pathname === href;

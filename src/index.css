@@ -132,8 +132,21 @@ All colors MUST be HSL. Clean, professional theme with warm accents.
 @layer components {
   /* Custom button variants using design system */
   .btn-hero {
-    @apply bg-primary hover:bg-primary-light text-primary-foreground px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-[var(--shadow-button)] hover:shadow-[var(--shadow-elegant)] hover:scale-105;
-  }
+  @apply bg-primary 
+         hover:bg-primary-light 
+         text-primary-foreground 
+         px-8 py-4
+         rounded-lg
+         font-semibold 
+         transition 
+         duration-300 
+         shadow-[var(--shadow-button)] 
+         hover:shadow-[var(--shadow-elegant)] 
+         hover:scale-105 
+         inline-block 
+         whitespace-nowrap;
+}
+
 
   .btn-outline {
     @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105;
