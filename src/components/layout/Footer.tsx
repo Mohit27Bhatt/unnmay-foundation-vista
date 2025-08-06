@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
+    { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/share/16NWPcbza3/' },
+    { name: 'whatsapp', icon: FaWhatsapp, href: 'https://wa.me/+919690623422' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/unnmayfoundation?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' },
   ];
 
   const quickLinks = [
@@ -61,13 +61,13 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-sm">
                 <Phone size={16} className="text-primary-foreground/80" />
-                <span className="text-primary-foreground/80">+91 XXXXX XXXXX</span>
+                <span className="text-primary-foreground/80">+91 9690623422</span>
               </div>
               <div className="flex items-start space-x-2 text-sm">
                 <MapPin size={16} className="text-primary-foreground/80 mt-1" />
                 <span className="text-primary-foreground/80">
                   Address Line 1<br />
-                  City, State - PIN Code
+                  6FCM+9JX, Kanti Puram, Himmatpur Malla, Haldwani, Himmatpur Talla, Uttarakhand 263139
                 </span>
               </div>
             </div>
