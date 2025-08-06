@@ -89,12 +89,7 @@ const Footer = () => {
               ))}
             </div>
             <div className="space-y-2 mt-6">
-              <p className="text-xs text-primary-foreground/80">
-                <strong>NGO Registration:</strong> XXXXXXXX
-              </p>
-              <p className="text-xs text-primary-foreground/80">
-                <strong>12A & 80G Certified</strong>
-              </p>
+             
             </div>
           </div>
         </div>
