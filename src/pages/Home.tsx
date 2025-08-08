@@ -11,8 +11,8 @@ const Home = () => {
 
   const featuredProjects = [
     {
-      title: 'Kha Chan Humra GM',
-      description: 'Our flagship project focused on sustainable community development and education.',
+      title: 'Kha Chan Humra GM : LIVE',
+      description: 'An initiative to find GM from Uttarakhand.',
       link: '/kha-chan-humra-gm',
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop'
     },
@@ -78,7 +78,7 @@ const Home = () => {
                 Empowering Communities Through <span className="text-primary">Sustainable Change</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                For over five years, Unnmay Foundation has been at the forefront of community development, 
+                For over ten years, Unnmay Foundation has been at the forefront of community development, 
                 working tirelessly to create opportunities for education, growth, and sustainable development 
                 in underserved communities.
               </p>

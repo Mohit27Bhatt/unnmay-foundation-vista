@@ -3,48 +3,46 @@ import { Link } from 'react-router-dom';
 
 const KhaChanHumraGM = () => {
   const projectStats = [
-    { label: 'Beneficiaries', value: '2,500+', icon: Users },
-    { label: 'Duration', value: '3 Years', icon: Calendar },
-    { label: 'Investment', value: '₹1.2 Crore', icon: Target },
-    { label: 'Success Rate', value: '95%', icon: Award },
+    { label: 'Beneficiaries', value: '4000+ and counting..', icon: Users },
+    { label: 'Duration', value: '4 weeks+ and counting..', icon: Calendar },
+    { label: 'Investment', value: '₹86000+ and counting.. ', icon: Target },
+    { label: 'Active Volunteer', value: '28+ and counting', icon: Award },
   ];
 
   const milestones = [
     {
       title: 'Project Launch',
-      date: 'January 2021',
-      description: 'Initiated community assessment and stakeholder engagement',
+      date: 'July 2025',
+      description: 'We laid the groundwork for the mission by assembling our core team and finalizing the project blueprint.',
       completed: true
     },
     {
-      title: 'Infrastructure Development',
-      date: 'March 2021',
-      description: 'Built community center, school upgrades, and healthcare facility',
-      completed: true
+      title: 'Talent Detection Phase',
+      date: 'August 2025',
+      description: 'The hunt for our Grandmaster officially began as our team started visiting schools and finding our first set of talented students.',
+      completed: false
     },
     {
-      title: 'Skill Development Programs',
-      date: 'June 2021',
-      description: 'Launched vocational training and digital literacy programs',
-      completed: true
+      title: 'The Grooming & Mentorship Program',
+      date: 'In future',
+      description: 'We will initiate a structured mentorship program, providing our selected students with foundational chess training, strategic guidance, and expert coaching. This phase will be dedicated to nurturing their raw talent and growing their passion for the game.',
+      completed: false
     },
     {
-      title: 'Sustainability Phase',
-      date: 'December 2023',
-      description: 'Transferred project ownership to local community leadership',
-      completed: true
+      title: 'Advanced Training & GM Pathway',
+      date: 'In future',
+      description: 'We will identify the most promising players from our mentorship program and provide them with advanced, high-level training and personalized guidance. This intense phase will place them on a focused pathway with the ultimate goal of earning the Grandmaster title.',
+      completed: false
     }
   ];
 
   const achievements = [
-    '2,500+ community members directly benefited',
-    '500+ youth trained in vocational skills',
-    '300+ women empowered through SHGs',
-    '100% increase in school enrollment',
-    '80% improvement in healthcare access',
-    '15 micro-enterprises established',
-    '3 community-led cooperatives formed',
-    '100% project sustainability achieved'
+    'Reached over 4,000 students with our talent detection tests',
+    'Built a dedicated team of 28+ members to drive our mission.',
+    'Successfully launched our talent search in 4+ schools.',
+    'Actively engaging with new schools and government officials to expand our program.',
+    'The search for our "Fantastic Four" has officially begun, and we have already identified promising talent.',
+    'And loading more..'
   ];
 
   return (
@@ -58,12 +56,11 @@ const KhaChanHumraGM = () => {
               Kha Chan Humra GM
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto">
-              Our flagship community development project that transformed rural livelihoods 
-              through integrated development and sustainable empowerment initiatives.
+               Our flagship community project focused on discovering and nurturing chess talent in Uttarakhand. We believe the next Grandmaster is among us, and we're committed to providing the guidance and support needed to help them reach their full potential.
             </p>
             <div className="inline-flex items-center bg-primary-foreground/20 rounded-full px-6 py-3">
               <CheckCircle className="w-5 h-5 mr-2" />
-              <span className="font-semibold">Successfully Completed</span>
+              <span className="font-semibold">LIVE</span>
             </div>
           </div>
         </div>
@@ -96,22 +93,24 @@ const KhaChanHumraGM = () => {
               </h2>
               <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  "Kha Chan Humra GM" (We Can Do It Together) was our most ambitious and successful 
-                  community development project, implemented over three years in rural areas of 
-                  Bihar and Uttar Pradesh. The project focused on holistic development through 
-                  integrated approaches to education, healthcare, livelihood generation, and 
-                  community empowerment.
+                 Every Grandmaster starts somewhere. For us, that journey begins with a question:
+                "Kha Chan Humra GM?" We believe the answer lies in the classrooms and playgrounds 
+                of Uttarakhand. This project is our quest to find that one special talent, to give
+                 them a platform, and to guide them every step of the way. This is more than a project;
+                  it's the start of a new legacy.
                 </p>
                 <p>
-                  What made this project unique was its community-driven approach. Rather than 
-                  imposing external solutions, we worked closely with local communities to identify 
-                  their needs, leverage their strengths, and build sustainable systems that they 
-                  could own and operate independently.
+                  Our mission is to systematically discover this hidden potential. We visit schools 
+                  across the state, conducting specialized talent detection tests to identify students 
+                  with a natural aptitude and passion for chess. From each class, we select the top four 
+                  brightest minds, our "Fantastic Four," and bring them into our program for mentorship, resources, and expert guidance.
                 </p>
                 <p>
-                  The project's success lies not just in the numbers, but in the transformation 
-                  of mindset and the creation of self-reliant communities that continue to thrive 
-                  long after our direct involvement ended.
+                  From there, we commit to a long-term partnership with these young players. We work
+                   closely with them, helping to refine their skills, teaching them strategic thinking,
+                    and building the mental fortitude required for the highest levels of the game. Our
+                     ultimate goal is to take the most dedicated of these champions and guide them on the
+                      difficult but rewarding path to becoming a chess Grandmaster.
                 </p>
               </div>
             </div>
@@ -134,7 +133,7 @@ const KhaChanHumraGM = () => {
               Project <span className="text-primary">Timeline</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              A journey of transformation spanning three years of dedicated community engagement.
+              A journey of transformation, dedicated to discovering and nurturing chess talent in Uttarakhand.
             </p>
           </div>
           <div className="relative">
@@ -175,7 +174,7 @@ const KhaChanHumraGM = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 animate-fade-up">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Key <span className="text-primary">Achievements</span>
+              Key <span className="text-primary">Achievements</span> so far..
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Measurable impact that continues to benefit communities today.
@@ -192,7 +191,7 @@ const KhaChanHumraGM = () => {
         </div>
       </section>
 
-      {/* Impact Story */}
+     {/* { Impact Story }
       <section className="py-20 bg-gradient-subtle">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="card-elegant p-8 lg:p-12 animate-fade-up">
@@ -235,7 +234,7 @@ const KhaChanHumraGM = () => {
           </div>
         </div>
       </section>
-
+     */}
       {/* Fantastic Four Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 bg-black/30"></div>
@@ -252,12 +251,13 @@ const KhaChanHumraGM = () => {
             </p>
             <h2 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
               Fantastic Four — <br/>
-              <span className="text-accent-light">Celebrating Local Talents</span>
+              <span className="text-accent-light">The Search for Our Chess Champions.</span>
             </h2>
             <p className="text-xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
-              Discover and celebrate the exceptional students from rural communities who are excelling 
-              in academics, leadership, and innovation. This program showcases four outstanding students 
-              from each participating school, highlighting their achievements and inspiring others.
+             Every Grandmaster starts somewhere, and for our project, that journey begins with the "Fantastic Four." 
+             These are the four most promising students discovered in each class, chosen for their raw talent, hunger
+              to learn, and natural connection to the game of chess. They are the first wave of champions we will mentor,
+               guide, and help to build into a new generation of chess legends.
             </p>
             <Link to="/fantastic-four-explorer" className="btn-hero bg-primary-foreground text-primary hover:bg-primary-foreground/90">
               Explore Fantastic 4 Students

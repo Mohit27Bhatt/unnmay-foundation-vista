@@ -33,7 +33,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'info@unnmayfoundation.org',
+      details: 'ngounnmay@gmail.com',
       description: 'Send us an email anytime'
     },
     {

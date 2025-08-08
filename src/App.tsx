@@ -5,11 +5,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import OurWork from "./pages/OurWork";
 import UpcomingProjects from "./pages/UpcomingProjects";
 import KhaChanHumraGM from "./pages/KhaChanHumraGM";
 import FantasticFourExplorer from "./pages/FantasticFourExplorer";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
