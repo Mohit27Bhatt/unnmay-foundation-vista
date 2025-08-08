@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, Facebook, Instagram } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,13 +39,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+91 XXXXX XXXXX',
+      details: '+91 9690623422',
       description: 'Mon-Fri 9AM-6PM IST'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: 'Address Line 1, City, State - PIN Code',
+      details: '6FCM+9JX, Kanti Puram, Himmatpur Malla, Haldwani, Himmatpur Talla, Uttarakhand 263139',
       description: 'Our main office location'
     },
     {
@@ -56,10 +57,10 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
+    { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/share/16NWPcbza3/' },
+    { name: 'whatsapp', icon: FaWhatsapp, href: 'https://wa.me/919690623422' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/unnmayfoundation?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' },
+
   ];
 
   return (
