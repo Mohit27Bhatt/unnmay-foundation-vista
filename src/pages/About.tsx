@@ -25,25 +25,69 @@ const About = () => {
   ];
 
   const team = [
-    {
-      name: 'Rajesh Kumar',
-      role: 'Founder & Executive Director',
-      description: 'Visionary leader with 15+ years in social development',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop'
-    },
-    {
-      name: 'Priya Sharma',
-      role: 'Program Director',
-      description: 'Expert in community engagement and project management',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop'
-    },
-    {
-      name: 'Amit Singh',
-      role: 'Field Operations Manager',
-      description: 'Grassroots specialist with deep community connections',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop'
-    }
-  ];
+  {
+    name: 'Rajesh Kumar',
+    role: 'Founder & Executive Director',
+    description: 'Visionary leader with 15+ years in social development',
+    image: '/images/team/rajesh-kumar.jpg'
+  },
+  {
+    name: 'Priya Sharma',
+    role: 'Program Director',
+    description: 'Expert in community engagement and project management',
+    image: '/images/team/priya-sharma.jpg'
+  },
+  {
+    name: 'Amit Singh',
+    role: 'Field Operations Manager',
+    description: 'Grassroots specialist with deep community connections',
+    image: '/images/team/amit-singh.jpg'
+  },
+  {
+    name: 'Manoj Adhikari',
+    role: 'Chairman',
+    description: 'Based in Almora, leading the organization with strategic vision',
+    image: '/images/team/manoj-adhikari.jpg'
+  },
+  {
+    name: 'Alok Padlia',
+    role: 'General Secretary',
+    description: 'From Nainital, overseeing operations and administrative duties',
+    image: '/images/team/alok.jpg'
+  },
+  {
+    name: 'Himanshi Jain',
+    role: 'Koshadhyaksh',
+    description: 'From Bareilly, managing finances and organizational resources',
+    image: '/images/team/himanshi.jpg'
+  },
+  {
+    name: 'Naween Bhatt',
+    role: 'Vice Chairman',
+    description: 'From Pithoragarh, supporting leadership and governance',
+    image: '/images/team/naveen.jpg'
+  },
+  {
+    name: 'Mohit Bhatt',
+    role: 'Secretary',
+    description: 'Coordinating meetings, documentation, and communications',
+    image: '/images/team/mohit.jpg'
+  },
+  {
+    name: 'Taskeen Fatima',
+    role: 'Vice President - Training',
+    description: 'Focusing on training programs and skill development',
+    image: '/images/team/taskeen.jpg'
+  },
+  {
+    name: 'Vineeta Nayal',
+    role: 'Secretary to the Chairman',
+    description: 'Assisting the chairman with scheduling and coordination',
+    image: '/images/team/vineeta-nayal.jpg'
+  }
+];
+
+  
 
   return (
     <div className="min-h-screen">
@@ -66,31 +110,65 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
-            <div className="card-elegant p-8 animate-fade-up">
+
+            {/* Mission Card */}
+            <div className="card-elegant p-8 animate-fade-up flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-primary-foreground" />
               </div>
               <h2 className="text-2xl font-bold text-foreground mb-4">Our Mission</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                To create sustainable, community-driven solutions that address social, educational, 
-                and economic challenges while empowering individuals and communities to achieve 
-                their full potential through innovative programs and collaborative partnerships.
+              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                We believe that before embarking on any learning journey, it is essential to first understand <strong>how to learn effectively</strong>—and this is at the heart of what we do.
+              </p>
+              <ul className="text-left space-y-4 mb-6 w-full max-w-md mx-auto">
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">1.</span>
+                  <span>
+                    <strong>Eliminating financial barriers</strong> so that no learner’s progress is hindered by limited resources.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">2.</span>
+                  <span>
+                    <strong>Recognising and nurturing individual talents</strong> at the earliest stages.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">3.</span>
+                  <span>
+                    <strong>Creating opportunities to explore diverse fields</strong> until each learner discovers their true passion.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary font-bold mr-2">4.</span>
+                  <span>
+                    <strong>Equipping learners with the right methods and guidance</strong> to excel in their chosen domain.
+                  </span>
+                </li>
+              </ul>
+              <p className="text-lg text-foreground font-medium">
+                With the right support, motivation, and opportunities, we believe every learner has the potential to achieve excellence, fulfillment, and lasting success.
               </p>
             </div>
-            <div className="card-elegant p-8 animate-fade-up">
+
+            {/* Vision Card */}
+            <div className="card-elegant p-8 animate-fade-up flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
                 <Eye className="w-8 h-8 text-primary-foreground" />
               </div>
               <h2 className="text-2xl font-bold text-foreground mb-4">Our Vision</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                A world where every community has the resources, knowledge, and opportunities 
-                needed to thrive independently, creating a ripple effect of positive change 
-                that transforms societies and builds a more equitable future for all.
+                For some learners, education is an exciting and rewarding journey leading to remarkable achievements.
+                For others, however, studying, learning, and even playing can feel challenging, discouraging, or overwhelming — but why should it be that way?
+                <br />
+                <br />
+                <strong>Our vision is to ensure that learning, in all its forms, is joyful, accessible, and empowering for every learner, enabling them to reach their fullest potential.</strong>
               </p>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Our Story */}
       <section className="py-20 bg-gradient-subtle">
