@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const KhaChanHumraGM = () => {
   const projectStats = [
-    { label: 'Beneficiaries', value: '4000+ and counting..', icon: Users },
+    { label: 'Beneficiaries', value: '6000+ and counting..', icon: Users },
     { label: 'Duration', value: '4 weeks+ and counting..', icon: Calendar },
     { label: 'Investment', value: '₹86000+ and counting.. ', icon: Target },
     { label: 'Active Volunteer', value: '28+ and counting', icon: Award },

@@ -1,11 +1,11 @@
-import { ArrowRight, Heart, Users, Target, Award } from 'lucide-react';
+import { ArrowRight, Heart, Users, Target, Award, Presentation } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   const stats = [
-    { icon: Users, value: '10,000+', label: 'Lives Impacted' },
-    { icon: Target, value: '50+', label: 'Projects Completed' },
-    { icon: Heart, value: '25+', label: 'Communities Served' },
+    { icon: Users, value: '25,000+', label: 'Lives Impacted' },
+    { icon: Target, value: '10+', label: 'Projects Completed' },
+    { icon: Presentation, value: '100+', label: 'Workshops Conducted ' },
     { icon: Award, value: '5+', label: 'Years of Service' },
   ];
 
@@ -14,13 +14,13 @@ const Home = () => {
       title: 'Kha Chan Humra GM : LIVE',
       description: 'An initiative to find GM from Uttarakhand.',
       link: '/kha-chan-humra-gm',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop'
+      image: "/images/team/champions.jpeg"
     },
     {
       title: 'Fantastic Four Explorer',
-      description: 'Innovative youth engagement program promoting exploration and learning.',
+      description: 'Top chess players from each class.',
       link: '/fantastic-four-explorer',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop'
+      image: '/images/team/ActivityImg.jpg'
     },
   ];
 
@@ -93,7 +93,7 @@ const Home = () => {
             </div>
             <div className="animate-fade-in">
               <img
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=400&fit=crop"
+                src="\images\team\kids.jpeg"
                 alt="Community engagement"
                 className="rounded-xl shadow-[var(--shadow-elegant)] w-full h-[400px] object-cover"
               />

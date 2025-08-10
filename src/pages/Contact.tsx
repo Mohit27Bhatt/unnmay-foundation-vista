@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, Facebook, Instagram } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { FaWhatsapp } from 'react-icons/fa';
+import emailjs from 'emailjs-com'; // ✅ Added EmailJS
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,12 +15,27 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you soon.",
-    });
-    setFormData({ name: '', email: '', subject: '', message: '' });
+
+    // ✅ Replace with your actual EmailJS credentials
+    const SERVICE_ID = "service_t33pzm9";
+    const TEMPLATE_ID = "template_9q7i6we";
+    const PUBLIC_KEY = "AI3dZiT_rlLhhE_1v";
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
+      .then(() => {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for reaching out. We'll get back to you soon.",
+        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        toast({
+          title: "Error",
+          description: "Failed to send your message. Please try again later.",
+        });
+      });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -33,14 +49,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'ngounnmayfoundation@gmail.com',
+      details: 'ngounnmay@gmail.com',
       description: 'Send us an email anytime'
     },
     {
       icon: Phone,
       title: 'Call Us',
       details: '+91 9690623422',
-      description: 'Mon-Fri 9AM-6PM IST'
+      description: 'Mon-Sun 9AM-6PM IST'
     },
     {
       icon: MapPin,
@@ -60,7 +76,6 @@ const Contact = () => {
     { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/share/16NWPcbza3/' },
     { name: 'whatsapp', icon: FaWhatsapp, href: 'https://wa.me/919690623422' },
     { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/unnmayfoundation?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' },
-
   ];
 
   return (
@@ -151,11 +166,11 @@ const Contact = () => {
                     className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors bg-background"
                   >
                     <option value="">Select a subject</option>
-                    <option value="volunteer">Volunteer Opportunities</option>
-                    <option value="partnership">Partnership Inquiry</option>
-                    <option value="donation">Donation Information</option>
-                    <option value="program">Program Information</option>
-                    <option value="other">Other</option>
+                    <option value="Volunteer Opportunities">Volunteer Opportunities</option>
+                    <option value="Partnership Inquiry">Partnership Inquiry</option>
+                    <option value="Donation Information">Donation Information</option>
+                    <option value="Program Information">Program Information</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
                 <div>
@@ -201,8 +216,8 @@ const Contact = () => {
                     <h3 className="font-semibold text-foreground mb-2">Office Hours</h3>
                     <p className="text-muted-foreground text-sm">
                       Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday: 9:00 AM - 2:00 PM<br />
-                      Sunday: Closed
+                      Saturday: 9:00 AM - 4:00 PM<br />
+                      Sunday: 9:00 AM - 2:00 PM
                     </p>
                   </div>
                   <div>
@@ -223,67 +238,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Ways to Support */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 animate-fade-up">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Ways to <span className="text-primary">Support Us</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              There are many ways you can contribute to our mission and make a positive impact.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="card-elegant p-6 text-center animate-fade-in">
-              <h3 className="text-xl font-semibold text-foreground mb-3">Volunteer</h3>
-              <p className="text-muted-foreground mb-4">
-                Share your skills and time to directly impact our programs and communities.
-              </p>
-              <p className="text-sm text-primary font-medium">Time Commitment: Flexible</p>
-            </div>
-            <div className="card-elegant p-6 text-center animate-fade-in">
-              <h3 className="text-xl font-semibold text-foreground mb-3">Donate</h3>
-              <p className="text-muted-foreground mb-4">
-                Financial contributions help us expand our reach and improve our programs.
-              </p>
-              <p className="text-sm text-primary font-medium">Tax Benefits: 80G Certified</p>
-            </div>
-            <div className="card-elegant p-6 text-center animate-fade-in">
-              <h3 className="text-xl font-semibold text-foreground mb-3">Partner</h3>
-              <p className="text-muted-foreground mb-4">
-                Corporate partnerships provide resources and expertise for greater impact.
-              </p>
-              <p className="text-sm text-primary font-medium">CSR Opportunities Available</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-20 bg-gradient-primary text-primary-foreground">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-up">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            Ready to Make a Difference?
-          </h2>
-          <p className="text-xl mb-8 text-primary-foreground/90">
-            Join our community of changemakers and help us create lasting impact in the lives 
-            of those who need it most.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-hero bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-              Schedule a Call
-            </button>
-            <a 
-              href="mailto:info@unnmayfoundation.org"
-              className="btn-outline border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              Email Us Directly
-            </a>
           </div>
         </div>
       </section>
