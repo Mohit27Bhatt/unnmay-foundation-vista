@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const UpcomingProjects = () => {
   const upcomingProjects = [
-    {
+   /* {
       title: 'Digital Education Hub',
       location: 'Rural Bihar',
       startDate: 'March 2024',
@@ -74,7 +74,7 @@ const UpcomingProjects = () => {
       status: 'Approval Pending',
       progress: 20,
       image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=600&h=300&fit=crop'
-    }
+    }*/
   ];
 
   const getStatusColor = (status: string) => {
