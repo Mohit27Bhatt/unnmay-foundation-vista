@@ -29,7 +29,7 @@ const About = () => {
     name: 'Manoj Adhikari',
     role: 'Chairman',
     description: 'Based in Almora, leading the organization with strategic vision',
-    image: '/images/team/manoj-adhikari.jpg'
+    image: '/images/team/ManojSir.jpeg'
   },
   {
     name: 'Alok Padlia',
