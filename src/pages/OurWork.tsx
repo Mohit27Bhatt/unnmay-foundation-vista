@@ -165,6 +165,50 @@ const OurWork = () => {
             </p>
           </div>
           <div className="space-y-10">
+          <div className="overflow-x-auto bg-white rounded-xl shadow-xl p-8 animate-fade-in">
+  <table className="min-w-full border border-gray-200">
+    <thead>
+      <tr className="bg-gray-100">
+        <th className="px-4 py-3 text-left font-bold text-gray-600 border-b">S. No.</th>
+        <th className="px-4 py-3 text-left font-bold text-gray-600 border-b">Year</th>
+        <th className="px-4 py-3 text-left font-bold text-gray-600 border-b">Working Sector</th>
+        <th className="px-4 py-3 text-left font-bold text-gray-600 border-b">Achievement</th>
+        <th className="px-4 py-3 text-left font-bold text-gray-600 border-b">Best Practices</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="px-4 py-4 border-b">1</td>
+        <td className="px-4 py-4 border-b">2013</td>
+        <td className="px-4 py-4 border-b">Sports</td>
+        <td className="px-4 py-4 border-b">Introduced Chess to 800 students in Dwarahat town of Almora district.</td>
+        <td className="px-4 py-4 border-b">Teaching in creating and interesting style.</td>
+      </tr>
+      <tr>
+        <td className="px-4 py-4 border-b">2</td>
+        <td className="px-4 py-4 border-b">2020</td>
+        <td className="px-4 py-4 border-b">Sports</td>
+        <td className="px-4 py-4 border-b">Online inter-school championship in which we approached 4000 schools all across Uttarakhand touched 20,000 students.</td>
+        <td className="px-4 py-4 border-b">Started chess tournament playing exposure at the right age of 5 years.</td>
+      </tr>
+      <tr>
+        <td className="px-4 py-4 border-b">3</td>
+        <td className="px-4 py-4 border-b">2022</td>
+        <td className="px-4 py-4 border-b">Sports</td>
+        <td className="px-4 py-4 border-b">Chess awareness rally at Haldwani under the leadership of then mayor Dr. Jogendra Rautela ji.</td>
+        <td className="px-4 py-4 border-b">Door to door reach to 22000 homes in Haldwani to increase awareness about the benefits of playing chess.</td>
+      </tr>
+      <tr>
+        <td className="px-4 py-4">4</td>
+        <td className="px-4 py-4">2024</td>
+        <td className="px-4 py-4">Sports</td>
+        <td className="px-4 py-4">Over the board off-line chess championship for 1000 students under the guidance of MLA Shri Sumit Hridayesh ji</td>
+        <td className="px-4 py-4">Chess notations Chess clock</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
             {/* Project 1 */}
             <div className="bg-white rounded-xl shadow-xl p-8 flex flex-col md:flex-row items-center gap-8 animate-fade-in">
               <div className="flex-1">
