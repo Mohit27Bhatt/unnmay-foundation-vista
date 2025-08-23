@@ -2,8 +2,8 @@ import { GraduationCap, Heart, Leaf, Users, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const OurWork = () => {
-  const workAreas = [
-    {
+   const workAreas = [
+  /*  {
       icon: GraduationCap,
       title: 'Education & Skill Development',
       description:
@@ -53,12 +53,12 @@ const OurWork = () => {
         'Youth Programs',
         'Senior Citizen Care',
       ],
-      impact: '25+ communities served',
-    },
+      impact: '100+ workshops',
+    }*/,
   ];
 
   const successStories = [
-    {
+   /* {
       title: 'Transforming Rural Education',
       location: 'Village Rampur, Bihar',
       description:
@@ -84,9 +84,10 @@ const OurWork = () => {
       image:
         'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=250&fit=crop',
       impact: '1,500+ people served',
-    },
+    }*/,
+    
   ];
-
+    
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -212,7 +213,7 @@ const OurWork = () => {
             <div className="bg-white rounded-xl shadow-xl p-8 flex flex-col md:flex-row items-center gap-8 animate-fade-in">
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold mb-2 text-foreground">
-                  First Project <span className="text-primary">| Mid Oct - 27 Dec 2020</span>
+                  First Chess Project <span className="text-primary">| Mid Oct - 27 Dec 2020</span>
                 </h3>
                 <p className="text-muted-foreground mb-2">Team Size: <strong>12</strong></p>
                 <ul className="list-disc pl-6 text-muted-foreground mb-2">
@@ -227,7 +228,7 @@ const OurWork = () => {
             <div className="bg-white rounded-xl shadow-xl p-8 flex flex-col md:flex-row items-center gap-8 animate-fade-in">
               <div className="flex-1">
                 <h3 className="text-2xl font-semibold mb-2 text-foreground">
-                  Second Project <span className="text-primary">| Sep - 24th Oct 2021</span>
+                  Second Chess Project <span className="text-primary">| Sep - 24th Oct 2021</span>
                 </h3>
                 <p className="text-muted-foreground mb-2">Team Size: <strong>15</strong></p>
                 <ul className="list-disc pl-6 text-muted-foreground mb-2">
@@ -306,16 +307,16 @@ const OurWork = () => {
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center animate-fade-in">
-              <div className="text-4xl font-bold text-primary mb-2">10,000+</div>
+              <div className="text-4xl font-bold text-primary mb-2">25,000+</div>
               <div className="text-muted-foreground">Lives Directly Impacted</div>
             </div>
             <div className="text-center animate-fade-in">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
+              <div className="text-4xl font-bold text-primary mb-2">10+</div>
               <div className="text-muted-foreground">Projects Completed</div>
             </div>
             <div className="text-center animate-fade-in">
-              <div className="text-4xl font-bold text-primary mb-2">25+</div>
-              <div className="text-muted-foreground">Communities Served</div>
+              <div className="text-4xl font-bold text-primary mb-2">100+</div>
+              <div className="text-muted-foreground">Workshops Completed</div>
             </div>
             <div className="text-center animate-fade-in">
               <div className="text-4xl font-bold text-primary mb-2">5+</div>

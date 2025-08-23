@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const KhaChanHumraGM = () => {
   const projectStats = [
-    { label: 'Beneficiaries', value: '4000+ and counting..', icon: Users },
-    { label: 'Duration', value: '4 weeks+ and counting..', icon: Calendar },
-    { label: 'Investment', value: '₹86000+ and counting.. ', icon: Target },
+    { label: 'Beneficiaries', value: '6000+ and counting..', icon: Users },
+    { label: 'Duration', value: '7 weeks+ and counting..', icon: Calendar },
+    { label: 'Investment', value: '₹106000+ and counting.. ', icon: Target },
     { label: 'Active Volunteer', value: '28+ and counting', icon: Award },
   ];
 
@@ -116,7 +116,7 @@ const KhaChanHumraGM = () => {
             </div>
             <div className="animate-fade-in">
               <img
-                src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&h=500&fit=crop"
+                src="/images/logo/GMyatra.jpeg"
                 alt="Community development"
                 className="rounded-xl shadow-[var(--shadow-elegant)] w-full h-[500px] object-cover"
               />

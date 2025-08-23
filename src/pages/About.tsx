@@ -26,28 +26,10 @@ const About = () => {
 
   const team = [
   {
-    name: 'Rajesh Kumar',
-    role: 'Founder & Executive Director',
-    description: 'Visionary leader with 15+ years in social development',
-    image: '/images/team/rajesh-kumar.jpg'
-  },
-  {
-    name: 'Priya Sharma',
-    role: 'Program Director',
-    description: 'Expert in community engagement and project management',
-    image: '/images/team/priya-sharma.jpg'
-  },
-  {
-    name: 'Amit Singh',
-    role: 'Field Operations Manager',
-    description: 'Grassroots specialist with deep community connections',
-    image: '/images/team/amit-singh.jpg'
-  },
-  {
     name: 'Manoj Adhikari',
     role: 'Chairman',
     description: 'Based in Almora, leading the organization with strategic vision',
-    image: '/images/team/manoj-adhikari.jpg'
+    image: '/images/team/ManojSir.jpeg'
   },
   {
     name: 'Alok Padlia',
@@ -189,18 +171,18 @@ const About = () => {
                 <p>
                   Unnmay Foundation was born from a simple yet powerful belief: that every community 
                   has the potential to transform itself given the right support, resources, and opportunities. 
-                  Founded in 2018, our journey began with a small team of passionate individuals who 
+                  Founded in 2019, our journey began with a small team of passionate individuals who 
                   witnessed firsthand the challenges faced by underserved communities.
                 </p>
                 <p>
                   What started as grassroots efforts in a few villages has now grown into a comprehensive 
-                  organization serving over 25 communities. Our approach has always been collaborative—we 
+                  organization serving over 25000+ lives. Our approach has always been collaborative—we 
                   don't impose solutions; we work alongside communities to identify their needs and 
                   co-create sustainable pathways to progress.
                 </p>
                 <p>
-                  Today, we're proud to have impacted over 10,000 lives through our various initiatives, 
-                  from education and skill development to healthcare and environmental conservation. 
+                  Today, we're proud to have impacted over 25,000 lives through our various initiatives, 
+                  from education and skill development to healthcare and personality development.
                   Every project we undertake is a testament to the power of collective action and 
                   community resilience.
                 </p>
@@ -208,7 +190,7 @@ const About = () => {
             </div>
             <div className="animate-fade-in">
               <img
-                src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=600&h=500&fit=crop"
+                src="\images\team\bigchess.jpeg"
                 alt="Community gathering"
                 className="rounded-xl shadow-[var(--shadow-elegant)] w-full h-[500px] object-cover"
               />

@@ -199,7 +199,9 @@ const FantasticFourExplorer = () => {
               Fantastic Four <span className="text-accent-light">Explorer</span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-primary-foreground/90 max-w-3xl mx-auto">
-              Discover the exceptional students making a difference in their communities across Uttarakhand.
+             {/* Discover the exceptional students making a difference in their communities across Uttarakhand.*/}
+              🚧 Work in Progress!  
+             "Our Fantastic Four are still exploring this universe. The real content will land here soon!"
             </p>
           </div>
         </div>
