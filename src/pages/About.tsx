@@ -65,7 +65,7 @@ const About = () => {
     name: 'Vineeta Nayal',
     role: 'Secretary to the Chairman',
     description: 'Assisting the chairman with scheduling and coordination',
-    image: '/images/team/vineeta-nayal.jpg'
+    image: '/images/team/Vineeta_Nayal.jpeg'
   },
   {
     name: 'Gayatri',
