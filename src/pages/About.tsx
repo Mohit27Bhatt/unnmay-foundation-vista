@@ -84,8 +84,15 @@ const About = () => {
     role: 'Secretary to the Chairman',
     description: 'Assisting the chairman with scheduling and coordination',
     image: '/images/team/vineeta-nayal.jpg'
+  },
+  {
+    name: 'Gayatri',
+    role: 'Ambassador of Goodwill',
+    description: 'Organising chess camps and awareness seminars in the field',
+    image: '/images/team/gayatri.jpg'
   }
 ];
+
 
   
 
